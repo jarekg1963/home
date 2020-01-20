@@ -1,0 +1,87 @@
+
+import { NgModule } from '@angular/core';
+import {
+   MatDatepickerModule,
+   MatNativeDateModule,
+   MatFormFieldModule,
+   MatInputModule,
+   MatTabsModule,
+} from '@angular/material';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
+import {MatDialogModule, MatDialogRef} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatSelectModule} from '@angular/material/select';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+// import { MAT_LABEL_GLOBAL_OPTIONS } from '@angular/material/core';
+import {MatIconModule} from '@angular/material';
+import {MatTableModule} from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+
+import { MatMenuModule } from '@angular/material';
+
+
+@NgModule({
+   imports: [
+      MatDatepickerModule,
+      MatNativeDateModule,
+      MatFormFieldModule,
+      MatGridListModule,
+      MatCardModule,
+      MatDialogModule,
+      MatButtonModule,
+      BrowserAnimationsModule,
+      MatInputModule,
+      MatSelectModule,
+      MatCheckboxModule,
+      MatIconModule,
+      MatTableModule,
+      MatToolbarModule,
+      MatPaginatorModule,
+      MatSortModule,
+      MatTabsModule,
+      MatSidenavModule,
+      MatDividerModule,
+      MatListModule,
+      MatMenuModule
+   ],
+   exports: [
+      MatDatepickerModule,
+      MatNativeDateModule,
+      MatInputModule,
+      MatGridListModule,
+      MatCardModule,
+      MatDialogModule,
+      MatButtonModule,
+      BrowserAnimationsModule,
+      MatSelectModule,
+     MatCheckboxModule,
+     MatFormFieldModule,
+     MatIconModule,
+     MatTableModule,
+     MatToolbarModule,
+     MatPaginatorModule,
+     MatSortModule,
+     MatTabsModule,
+     MatSidenavModule,
+     MatDividerModule,
+     MatListModule,
+     MatMenuModule
+
+   ],
+   providers: [
+    {
+      provide: MatDialogRef,
+      useValue: {}
+    },
+  ],
+
+})
+
+export class MaterialModule { }

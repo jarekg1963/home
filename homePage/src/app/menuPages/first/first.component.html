@@ -1,0 +1,26 @@
+<div class="col-md-6 user-container">
+
+  <table class="table table-striped">
+
+    <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>Date</th>
+        <th>TemperatureC</th>
+        <th>TemperatureF</th>
+        <th>summary</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of rowData">
+
+        <td>{{ user.date}}</td>
+          <td>{{user.summary}}</td>
+        <td>{{ user.temperatureC}}</td>
+        <td>{{ user.temperatureF}}</td>
+           </tr>
+        </tbody>
+  </table>
+</div>
+<button class="btn btn-lg btn-primary btn-block" (click)="close()">Close</button>
+

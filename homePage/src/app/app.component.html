@@ -1,0 +1,58 @@
+<!-- <img class="fullBg" fullpage [src]="page.image"> -->
+
+
+
+
+<mat-toolbar color="primary">
+
+  <div class="container" style="width: fit-content;">
+
+  <button mat-raised-button [matMenuTriggerFor]="menu" class="btn-block btn-blue"  *ngIf="uzytkownik !null ">
+      <mat-icon>more_vert</mat-icon>
+  </button>
+
+  <mat-menu #menu="matMenu" >
+    <button mat-menu-item (click)=openFirst()>
+      <mat-icon>unarchive</mat-icon>
+      <span>First</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>file_copy</mat-icon>
+      <span>Second</span>
+    </button>
+  </mat-menu>
+  </div>
+
+  <a class="navbar-brand" href="#">
+    <span class="logo logo-left">J</span>
+    <span class="logo logo-right">G</span>
+  </a>
+
+  <a mat-button  *ngIf="uzytkownik !null "> User: {{ uzytkownik}}   </a>
+
+
+  <span class="spacer"></span>
+
+  <a mat-button
+  [routerLink]="['home']"
+  routerLinkActive="active"> <mat-icon aria-hidden="false" md-16 aria-label="Example home icon">home</mat-icon>Home</a>
+  <a mat-button
+  [routerLink]="['about']"
+  routerLinkActive="active"><mat-icon>face</mat-icon>About</a>
+  <a mat-button
+  [routerLink]="['contact']"
+  routerLinkActive="active"><mat-icon>contact_support</mat-icon>Contact</a>
+  <a mat-button
+  (click)="login()"
+  routerLinkActive="active"><mat-icon>toll</mat-icon>Login</a>
+</mat-toolbar>
+
+
+
+
+<app-page></app-page>
+
+<app-footer></app-footer>
+
+
+

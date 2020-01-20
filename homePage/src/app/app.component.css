@@ -1,0 +1,57 @@
+
+
+mat-toolbar {
+  position: relative;
+  z-index: 1;
+  overflow-x: auto;
+}
+
+mat-toolbar-row {
+  justify-content:space-between;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+a.active {
+  background-color: rgba(0,0,0, 0.3);
+}
+
+h1 {
+  margin: 0;
+}
+
+h1 .light {
+  font-weight: 100;
+}
+
+.logo{
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.logo-left{
+  background-color: #58a198;
+  padding: 3px 5px 3px 8px;
+  border-radius: 4px;
+}
+
+.logo-right{
+  background-color: #58a198;
+  padding: 3px 8px 3px 3px;
+  margin-left: -5px;
+  border-radius: 4px;
+}
+
+
+.fullBg {
+  z-index:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
