@@ -45,6 +45,8 @@ dotnet publish -c Release -r win10-x64 --self-contained true -o C:\programowanie
     >taskkill /im:nginx.exe /f
 
 
+test git
+
 -----------------------------------------------------------------
 DO PRZEROBIENIA
 Youtube 
